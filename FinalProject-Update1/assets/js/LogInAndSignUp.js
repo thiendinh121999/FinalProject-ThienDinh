@@ -4,7 +4,7 @@ let currentUser = JSON.parse(localStorage.getItem("user")) || '';
 let logout = document.getElementById("logout");
 if (currentUser && currentUser.username) {
     loginHtml.innerHTML = `${currentUser.username} / <i class="fa-solid fa-arrow-right-from-bracket" id="logout" style="cursor: pointer"></i>`;
-} else loginHtml.innerHTML = `<a href="#0" id="login">ĐĂNG NHẬP</a>`
+} else loginHtml.innerHTML = `<a href="login.html" id="login">ĐĂNG NHẬP</a>`
 
 // logout
 document.getElementById("logout").addEventListener("click", function () {
