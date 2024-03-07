@@ -39,7 +39,8 @@ function login(e) {
     // console.log(data);
     if (currentUser == null) {
         alert("Vui lòng nhập Email và mật khẩu đăng nhập")
-    } else if (email == currentUser.email &&
+    } else if (username == currentUser.username &&
+        email == currentUser.email&&
         password == currentUser.password) {
         alert("Đăng nhập thành công")
         window.location.href = "index.html"

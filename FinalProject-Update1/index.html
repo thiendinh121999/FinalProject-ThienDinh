@@ -20,7 +20,7 @@
 <body>
   <div id="navbar">
     <div class="logo">
-      <a href="./index.html"><img src="./assets/Resource/Logo 1.png" height="25" alt="Ricky Men Wears"></a>
+      <a href="./index.html"><img src="./assets/Resource/Logo 1.png" alt="Ricky Men Wears"></a>
     </div>
     <ul class="nav-links">
       <li><a href="./index.html" class="navitem">TRANG CHỦ</a></li>
@@ -30,7 +30,7 @@
   </div>
   <div class="mainmenu">
     <div class="mainmenu-logo">
-      <a href="./index.html"><img src="./assets/Resource/Logo 2.png" height="50"></a>
+      <a href="./index.html"><img src="./assets/Resource/Logo 2.png"></a>
     </div>
     <div class="mainmenu-link">
       <a href="./index.html#newproduct-header">
@@ -52,7 +52,7 @@
     <div class="search-cart">
       <div class="searchbar">
         <div class="search-icon">
-          <img class="search-icon" src="./assets/Resource/768px-Search_Icon.svg.png" height="30px">
+          <img src="./assets/Resource/768px-Search_Icon.svg.png">
         </div>
         <div class="search-input">
           <input type="text" placeholder="Tìm sản phẩm...">
@@ -89,8 +89,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div>
-    <img class="img-sale" height="300px" src="./assets/Resource/Sales50.avif">
+  <div class="img-sale">
+    <img src="./assets/Resource/Sales50.avif">
   </div>
   <!--KHU VỰC SẢN PHẨM MỚI-->
   <div id="newproduct-header">Sản phẩm mới</div>
@@ -138,45 +138,26 @@
   <!--KHU VỰC SẢN XUẤT RIÊNG-->
   <div id="container-request">
     <div class="container-request-mess">
-      <p
-        style="color:white; font-weight: light; font-size: 50px; font-family: 'Pangea Afrikan Trial SemiBold'; width: 100%; margin-top:auto; margin-bottom: auto;">
-        Thỏa cá tính với sản phẩm may đo riêng biệt, dành riêng cho bạn!</p>
+      <p>Thỏa cá tính với sản phẩm may đo riêng biệt, dành riêng cho bạn!</p>
     </div>
     <div class="container-form">
-      <p style="color:rgb(40, 36, 36); font-size: 25px; font-family: 'Pangea Afrikan Trial SemiBold'; width: 100%">Gửi
-        yêu cầu cho Ricky Store</p>
+      <p class="form-header">Gửi yêu cầu cho Ricky Store</p>
       <form onsubmit="request()">
         <div>
-          <label
-            style="color: rgb(145, 143, 143); font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">Sản
-            phẩm và số lượng bạn cần:</label>
-          <input id="productOrder"
-            style="width:100%; border: 1px solid rgb(163, 163, 163); border-radius: 7px; font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light';margin-bottom:10px"
-            type="text" placeholder="VD:Áo thun UV 2 cái" required>
+          <label class="form-label">Sản phẩm và số lượng bạn cần:</label>
+          <input class="form-input" id="productOrder" type="text" placeholder="VD:Áo thun UV 2 cái" required>
         </div>
         <div>
-          <label
-            style="color: rgb(145, 143, 143); font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">Họ
-            và tên của bạn:</label>
-          <input id="requesterName"
-            style="width:100%; border: 1px solid rgb(163, 163, 163); border-radius: 7px; font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light';margin-bottom:10px"
-            type="text" placeholder="VD: Nguyễn Văn A" required>
+          <label class="form-label">Họ và tên của bạn:</label>
+          <input class="form-input" id="requesterName" type="text" placeholder="VD: Nguyễn Văn A" required>
         </div>
         <div>
-          <label
-            style="color: rgb(145, 143, 143); font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">Số
-            điện thoại của bạn:</label>
-          <input id="requesterTell"
-            style="width:100%; border: 1px solid rgb(163, 163, 163); border-radius: 7px; font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light';margin-bottom:10px"
-            type="tel" placeholder="VD: 0395 381 xxx" required>
+          <label class="form-label">Số điện thoại của bạn:</label>
+          <input class="form-input" id="requesterTell" type="tel" placeholder="VD: 0395 381 xxx" required>
         </div>
         <div>
-          <label
-            style="color: rgb(145, 143, 143); font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">Email
-            của bạn:</label>
-          <input id="requesterEmail"
-            style="width:100%; border: 1px solid rgb(163, 163, 163); border-radius: 7px; font-weight: light; font-size: 15px; font-family: 'Pangea Afrikan Trial Light';margin-bottom:15px"
-            type="email" placeholder="VD: xxx@gmail.com" required>
+          <label class="form-label">Email của bạn:</label>
+          <input class="form-input" id="requesterEmail" type="email" placeholder="VD: xxx@gmail.com" required>
         </div>
         <button id="submit-button" type="submit">Gửi yêu cầu</button>
       </form>
@@ -184,33 +165,31 @@
   </div>
   <div id="footer">
     <div class="footer-message">
-      <h2 style="color:white; font-size: 25px; font-family: 'Pangea Afrikan Trial SemiBold';">Ricky lắng nghe bạn!</h2>
-      <p style="color:white; font-size: 12px; font-family: 'Pangea Afrikan Trial Light'; width: 60%;">Chúng tôi luôn
-        trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản
-        phẩm tốt hơn nữa.</p>
+      <h2 class="footer-message-header">Ricky lắng nghe bạn!</h2>
+      <p class="footer-message-content">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
     </div>
     <div class="phone-email">
       <div class="phone">
         <div>
-          <img src="./assets/Resource/phoneIcon.png" height="30px">
+          <img src="./assets/Resource/phoneIcon.png">
         </div>
         <div style="margin-left: 5px;">
-          <p
-            style="color: rgb(255, 255, 255); font-weight: light; font-size: 17px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">
+          <p class="phone-head"
+            >
             Hotline</p>
-          <p style="color: white; font-weight: light; font-size: 25px; font-family: 'Pangea Afrikan Trial Light';">1900
+          <p  class="phone-content">1900
             272 XXX</p>
         </div>
       </div>
       <div class="mail">
         <div>
-          <img src="./assets/Resource/mailIcon.png" height="30px">
+          <img src="./assets/Resource/mailIcon.png">
         </div>
         <div style="margin-left: 5px;">
-          <p
-            style="color: rgb(255, 255, 255); font-weight: light; font-size: 17px; font-family: 'Pangea Afrikan Trial Light'; margin-bottom: 5px;">
+          <p class="mail-head"
+            >
             Email</p>
-          <p style="color: white; font-weight: light; font-size: 25px; font-family: 'Pangea Afrikan Trial Light';">
+          <p class="mail-content">
             pod@rickystore.me</p>
         </div>
       </div>
